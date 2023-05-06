@@ -3,7 +3,6 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0-alpha3/css/bootstrap.min.css" integrity="sha512-iGjGmwIm1UHNaSuwiNFfB3+HpzT/YLJMiYPKzlQEVpT6FWi5rfpbyrBuTPseScOCWBkRtsrRIbrTzJpQ02IaLA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./src/style.less" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css" integrity="sha512-ZnR2wlLbSbr8/c9AgLg3jQPAattCUImNsae6NHYnS9KrIwRdcY9DxFotXhNAKIKbAXlRnujIqUWoXXwqyFOeIQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -48,12 +47,16 @@
                 <label for="confidence">Confidence</label>
               </div>
             </div>
-            <div class="p-2"><button type="button" class="btn btn-primary" id="calculate">Calculate</button></div>
+            <div class="p-2"><button type="button" class="btn btn-primary" id="calculate" title="Calculate">Calculate</button></div>
             <div class="p-2">
-              <button type="button" class="btn btn-success" id="add-to-list"><i class="bi bi-plus-lg"></i></button>
+              <button type="button" class="btn btn-success" id="add-to-list" title="Add To List">
+                <i class="bi bi-plus-lg"></i>
+              </button>
             </div>
             <div class="p-2">
-              <button type="button" class="btn btn-danger" id="rm-from-list"><i class="bi bi-dash-lg"></i></button>
+              <button type="button" class="btn btn-danger" id="rm-from-list" title="Remove From List">
+                <i class="bi bi-dash-lg"></i>
+              </button>
             </div>
           </div>
         </div>
@@ -62,13 +65,13 @@
     <div class="containser-sm mx-5 my-2" id="results">
       <div class="card">
         <div class="card-body">
-          <table class="table table-bordered">
+          <table class="table table-bordered" aria-describedby="">
             <thead>
               <tr>
-                <td>Materia</td>
-                <td>Amount</td>
-                <td>Slots</td>
-                <td>Cost</td>
+                <th>Materia</th>
+                <th>Amount</th>
+                <th>Slots</th>
+                <th>Cost</th>
               </tr>
             </thead>
             <tbody></tbody>
