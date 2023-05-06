@@ -1,0 +1,66 @@
+#item-template {
+  display: none;
+}
+
+input {
+  &[type="number"] {
+    appearance: textfield;
+  }
+
+  &[id="confidence"] {
+    width: 25px;
+  }
+}
+
+#list {
+  & .list-item {
+    & input {
+      display: inline-block;
+      &[id*="-Materia"] {
+        width: 150px;
+      }
+      &[id*="-Quantity"],
+      &[id*="-Probibility"] {
+        width: 25px;
+      }
+    }
+
+    & label {
+      display: block;
+    }
+
+    & .input-holder {
+      border: 1px solid #8f8f9d;
+      display: inline-block;
+      padding: 0px;
+
+      & > input {
+        border: 0;
+        margin: 0;
+        padding: 0;
+        min-height: 22px;
+        outline: none;
+      }
+
+      &.percent {
+        padding: 0 2px 0 0;
+
+        &:after {
+          content: "%";
+          color: #8f8f9d;
+          text-decoration: bold;
+        }
+      }
+
+      &.count {
+        padding: 0 0 0 2px;
+
+        &:before {
+          content: "x";
+          color: #8f8f9d;
+          text-decoration: bold;
+        }
+      }
+    }
+  }
+}
