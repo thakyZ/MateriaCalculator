@@ -1,0 +1,9 @@
+{
+  "htmlhint.enable": true,
+  "htmlhint.documentSelector": [
+    "html",
+    "htm",
+    "soup"
+  ],
+  "htmlhint.configFile": "./.htmlhintrc"
+}

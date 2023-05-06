@@ -1,5 +1,5 @@
 {
-  "name": "materia-calulcator",
+  "name": "materia-calculator",
   "version": "1.0.0",
   "description": "",
   "main": "index.html",
@@ -12,6 +12,7 @@
   },
   "devDependencies": {
     "@babel/core": "7.21.8",
+    "htmlhint": "^1.1.4",
     "parcel": "^2.0.0"
   },
   "keywords": []
