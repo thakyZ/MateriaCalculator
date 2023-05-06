@@ -2,16 +2,17 @@
   "name": "materia-calculator",
   "version": "1.0.0",
   "description": "",
-  "main": "index.html",
+  "main": "src/script.js",
   "scripts": {
-    "start": "parcel index.html --open",
-    "build": "parcel build index.html"
+    "build": "npx parcel build index.html",
+    "start": "npx parcel index.html --open"
   },
   "dependencies": {
     "jquery": "3.6.4"
   },
   "devDependencies": {
-    "@babel/core": "7.21.8",
+    "@babel/core": "^7.21.8",
+    "@parcel/transformer-less": "^2.8.3",
     "htmlhint": "^1.1.4",
     "parcel": "^2.0.0"
   },
