@@ -4,7 +4,7 @@
   "description": "",
   "scripts": {
     "build": "pnpx parcel build index.html",
-    "start": "pnpm run build && pnpx parcel index.html --open"
+    "start": "pnpm run build && pnpx parcel index.html"
   },
   "dependencies": {
     "jquery": "3.6.4"
